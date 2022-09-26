@@ -26,11 +26,14 @@ li{
 }
 input{
     width: 60%;
-    height: 30px;
+    height: 35px;
     border-radius: 25px;
     background-color: rgb(255,253,237);
 
 }
 img{
     width: 100%;
+}
+.invite-friends, .below-brand-spotlight{
+    display: flex;
 }

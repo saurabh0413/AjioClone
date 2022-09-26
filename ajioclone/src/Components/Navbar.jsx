@@ -38,7 +38,7 @@ const Navbar = () => {
 };
 
 const Header = styled.div`
-//   border: 1px solid red;
+  //   border: 1px solid red;
   height: 90px;
   border-top: 3px solid rgb(47, 66, 84);
   display: flex;
@@ -48,19 +48,18 @@ const Header = styled.div`
 const Menulist = styled.div`
   margin-left: 15%;
   height: 25px;
-  margin-top: 3.1%;
+  margin-top: 2.7%;
 `;
 const InputSearch = styled.div`
-//   border: 1px solid black;
+  //   border: 1px solid black;
   width: 30%;
   display: flex;
   height: 40px;
-  margin-top:50px;
-  padding-left:10px
+  margin-top: 50px;
+  padding-left: 10px;
 `;
 
 const ShopLogo = styled.div`
- 
   margin-left: 10px;
   // border:1px solid black;
   width: 30%;

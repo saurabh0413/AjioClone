@@ -3,6 +3,10 @@ import "./Carousal.css";
 const Carousal = () => {
   return (
     <div className="carUp">
+      <img
+        src="https://assets.ajio.com/cms/AJIO/WEB/D-UHP-100hrsspecialsale-strip.jpg"
+        alt=""
+      />
       <div
         id="carouselExampleIndicators"
         className="carousel slide"
@@ -90,43 +94,11 @@ const Carousal = () => {
             />
           </div>
         </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
       </div>
+      {/* 
+second carousal start */}
 
-      <footer className="page-footer">
-        <span>made by </span>
-        <a href="https://georgemartsoukos.com/" target="_blank">
-          <img
-            width="24"
-            height="24"
-            src="https://assets.codepen.io/162656/george-martsoukos-small-logo.svg"
-            alt="George Martsoukos logo"
-          />
-        </a>
-      </footer>
+      {/* second carousal end */}
     </div>
   );
 };
