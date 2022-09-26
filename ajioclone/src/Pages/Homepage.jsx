@@ -1,9 +1,16 @@
-import React from 'react'
-
+import React from "react";
+import Navbar from "../Components/Navbar";
+import styled from "styled-components";
 const Homepage = () => {
   return (
-    <div>Homepage</div>
-  )
-}
+    <HomeCss>
+      <Navbar />
+    </HomeCss>
+  );
+};
 
-export default Homepage
+export default Homepage;
+
+const HomeCss = styled.div`
+ 
+`;

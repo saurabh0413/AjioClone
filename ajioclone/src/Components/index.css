@@ -1,0 +1,17 @@
+      
+.home-logo-div{
+    /* border: 1px solid red; */
+    width: 8.125rem;
+    margin: 1.5rem 0 0 10rem;
+}
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+}
+li{
+    list-style: none;
+    padding: 1rem;
+
+}
