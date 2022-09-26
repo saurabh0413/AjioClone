@@ -1,0 +1,39 @@
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    width: 60px;
+    height: 6px;
+    border: none;
+    border-radius: 24px;
+  }
+  
+  .carousel-indicators [data-bs-target] span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #7952b3;
+    border-radius: inherit;
+  }
+  
+  
+  /* FOOTER STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-footer {
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.65);
+  }
+  
+  .page-footer a {
+    display: flex;
+    margin-left: 4px;
+  }
+  .carUp{
+    margin-top: 2px;
+  }
