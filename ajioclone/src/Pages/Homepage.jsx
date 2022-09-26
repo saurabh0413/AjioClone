@@ -2,12 +2,18 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import styled from "styled-components";
 import "../Components/index.css";
-import Carousal from "../Components/Carousal";
+
+import Carousal1 from "../Components/Carousal1";
+import WithScrollbar from "../Components/Carousal";
+import Simple from "../Components/Carousal";
+
+import Bodycontent from "../Components/Bodycontent";
+
 const Homepage = () => {
   return (
     <HomeCss>
       <Navbar />
-      <Carousal />
+      <Carousal1 />
       <img
         src="https://assets.ajio.com/cms/AJIO/WEB/1609-D-rewards-header.jpg"
         alt=""
@@ -48,10 +54,18 @@ const Homepage = () => {
         src="https://assets.ajio.com/cms/AJIO/WEB/16092022-UHP-D-sponsorcarousel-sectionheader.jpg"
         alt=""
       />
-      <img src="https://assets.ajio.com/cms/AJIO/WEB/16092022-D-MHP-freedelivery-alloreders.jpg" alt="" />
+      <img
+        src="https://assets.ajio.com/cms/AJIO/WEB/16092022-D-MHP-freedelivery-alloreders.jpg"
+        alt=""
+      />
       <img src="https://assets.ajio.com/cms/AJIO/WEB/D-shipping.jpg" alt="" />
-      <img src="https://assets.ajio.com/cms/AJIO/WEB/1609-D-BestSellers-Header.jpg" alt="" />
+      <img
+        src="https://assets.ajio.com/cms/AJIO/WEB/1609-D-BestSellers-Header.jpg"
+        alt=""
+      />
+      <Bodycontent />
     </HomeCss>
+
   );
 };
 

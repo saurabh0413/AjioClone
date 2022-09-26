@@ -1,9 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import CustomArrows from "../Components/Carousal";
 const Bodycontent = () => {
   return (
-    <div>Bodycontent</div>
-  )
-}
+    <div>
+      <CustomArrows />
+      
+    </div>
+  );
+};
 
-export default Bodycontent
+export default Bodycontent;

@@ -1,106 +1,38 @@
-import React from "react";
-import "./Carousal.css";
-const Carousal = () => {
-  return (
-    <div className="carUp">
-      <img
-        src="https://assets.ajio.com/cms/AJIO/WEB/D-UHP-100hrsspecialsale-strip.jpg"
-        alt=""
-      />
-      <div
-        id="carouselExampleIndicators"
-        className="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-pause="true"
-      >
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          >
-            <span></span>
-          </button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          >
-            <span></span>
-          </button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          >
-            <span></span>
-          </button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          >
-            <span></span>
-          </button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          >
-            <span></span>
-          </button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img
-              src="https://assets.ajio.com/cms/AJIO/WEB/26092022-D-UHP-topbanner-GIF-allstarsale.gif"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://assets.ajio.com/cms/AJIO/WEB/26092022-unisex-d-main-p3-brands-5070.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://assets.ajio.com/cms/AJIO/WEB/26092022-unisex-d-Main-p5-brands-min40.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://assets.ajio.com/cms/AJIO/WEB/26092022-unisex-d-main-p2-brands-4060.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://assets.ajio.com/cms/AJIO/WEB/26092022-unisex-d-Main-p5-brands-min40.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-        </div>
+import React, { Component } from "react";
+import Slider from "react-slick";
+import { ChevronLeftIcon } from '@chakra-ui/icons'
+export default class CustomArrows extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+    };
+    const images = [
+      "https://assets.ajio.com/cms/AJIO/WEB/1609-D-footwear-accessories-Sports-&-Casual-Shoes.jpg",
+      "https://assets.ajio.com/cms/AJIO/WEB/1609-D-footwear-accessories-Flip-Flops-&-Sandals.jpg",
+      "https://assets.ajio.com/cms/AJIO/WEB/1609-D-footwear-accessories-Sneakers.jpg",
+      "https://assets.ajio.com/cms/AJIO/WEB/1609-D-footwear-accessories-Watches.jpg",
+      "https://assets.ajio.com/cms/AJIO/WEB/1609-D-footwear-accessories-Sunglasses.jpg",
+      "https://assets.ajio.com/cms/AJIO/WEB/1609-D-footwear-accessories-Home.jpg",
+      "https://assets.ajio.com/cms/AJIO/WEB/1609-D-footwear-accessories-Formal-Shoes.jpg",
+    ];
+    return (
+      <div className="sliderComing">
+        <Slider {...settings}>
+          {images.map((img) => {
+            return (
+              <div className="slideImage">
+                <img src={img} alt="" />
+              </div>
+            );
+          })}
+        </Slider>
+        <button className="sliderButton">
+          <ChevronLeftIcon />
+        </button>
       </div>
-      {/* 
-second carousal start */}
-
-      {/* second carousal end */}
-    </div>
-  );
-};
-
-export default Carousal;
+    );
+  }
+}

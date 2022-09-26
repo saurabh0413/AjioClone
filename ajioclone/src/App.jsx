@@ -1,6 +1,7 @@
 import "./App.css";
 import MainRoutes from "./Pages/MainRoutes";
-import styled from "styled-components"
+import styled from "styled-components";
+
 function App() {
   return (
     <div className="App">
@@ -10,7 +11,7 @@ function App() {
 }
 
 const global_styles = styled.div`
-margin:0;
-padding:0
+  margin: 0;
+  padding: 0;
 `;
 export default App;
