@@ -102,3 +102,23 @@ input[type="range"] {
 .slideImage >img{
   height: 100%;
 }
+.moveitup{
+  margin-top: 400px;
+ 
+}
+.grid-of-six{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+
+.open-modal-bottom {
+  position: fixed;
+  z-index: 1;
+  border-radius: 50px;
+  background-color: white;
+ height: 45px;
+ width: 45px;
+ right: 18px;
+ bottom: 10px;
+}
