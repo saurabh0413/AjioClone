@@ -89,22 +89,16 @@ input[type="range"] {
     padding: 20px 0 20px 20px;
   }
   .sliderComing{   
-   width: 99%;
+   width: 98%;
    height: 300px;
    position: relative;
+   margin: auto;
   }
  .slideImage{
     /* border: 2px solid red; */
-    width:200px;
-    height: 500px;   
+    width:25%;
+    height: 100%; 
  }
-.sliderButton{
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    cursor: pointer;
-   z-index: 1;
-    position: absolute;
-    top: 65%;
-    margin-left: 10px;
+.slideImage >img{
+  height: 100%;
 }
