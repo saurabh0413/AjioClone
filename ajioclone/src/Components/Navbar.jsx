@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "./index.css";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <Header>
@@ -12,16 +13,27 @@ const Navbar = () => {
       </div>
       <Menulist>
         <ul>
-          <li>MEN</li>
-          <li>WOMEN</li>
-          <li>KIDS</li>
-          <li>INDIE</li>
-          <li>HOME AND KITCHEN</li>
+          <Link to="/shop/men">
+            <li>MEN</li>
+          </Link>
+          <Link to="/shop/women">
+            <li>WOMEN</li>
+          </Link>
+          <Link to="/shop/kids">
+            <li>KIDS</li>
+          </Link>
+          <Link to="/shop/indie">
+            <li>INDIE</li>
+          </Link>
+          <Link to="/shop/kitchen">
+            <li>HOME AND KITCHEN</li>
+          </Link>
         </ul>
       </Menulist>
 
       <InputSearch>
-        <input type="text" placeholder="search AJIO" />
+        <div className="visit-ajio"></div>
+        <input type="text" placeholder="search AJIO" className="headerSearch" />
         <ShopLogo>
           <img
             src="https://assets.ajio.com/static/img/wishlistIcon.svg"
@@ -30,6 +42,7 @@ const Navbar = () => {
           <img
             src="https://assets.ajio.com/static/img/wishlistIcon.svg"
             alt=""
+            style={{ marginLeft: "-40px" }}
           />
         </ShopLogo>
       </InputSearch>
@@ -43,28 +56,31 @@ const Header = styled.div`
   border-top: 3px solid rgb(47, 66, 84);
   display: flex;
   width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
 `;
 
 const Menulist = styled.div`
   margin-left: 15%;
   height: 25px;
-  margin-top: 2.7%;
+  margin-top: 2.4%;
 `;
 const InputSearch = styled.div`
   //   border: 1px solid black;
   width: 30%;
   display: flex;
   height: 40px;
-  margin-top: 50px;
-  padding-left: 10px;
+  margin-top: 45px;
+  padding-left: 50px;
 `;
 
 const ShopLogo = styled.div`
-  margin-left: 10px;
+  margin-left: 50px;
   // border:1px solid black;
   width: 30%;
   display: flex;
-  gap: 20px;
   padding-bottom: 5px;
+  margin-left: -5px;
 `;
 export default Navbar;
