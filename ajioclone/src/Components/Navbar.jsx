@@ -51,7 +51,7 @@ const Navbar = () => {
 };
 
 const Header = styled.div`
-  //   border: 1px solid red;
+     border: 1px solid red;
   height: 90px;
   border-top: 3px solid rgb(47, 66, 84);
   display: flex;
