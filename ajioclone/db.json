@@ -9,11 +9,104 @@
       "discount": "(67% OFF)",
       "images": [
         "https://assets.ajio.com/medias/sys_master/root/20210420/R70k/607ecc5baeb269a9e3972075/dennislingo_premium_attire_green_full_sleeves_slim_fit_shirt.jpg",
-
+        "https://assets.ajio.com/medias/sys_master/root/20210420/BJmQ/607ecc69aeb269a9e39720b5/-473Wx593H-462323964-green-MODEL4.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20210420/lnR0/607ecc69aeb269a9e39720bb/-473Wx593H-462323964-green-MODEL5.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20210420/lnR0/607ecc69aeb269a9e39720bb/-473Wx593H-462323964-green-MODEL5.jpg"
+        
        ],
       "size": ["S", "M", "L", "XL", "XXL"],
       "rating": "3.9",
       "rating_count": "11k"
+    },
+    {
+      "category": "Mens",
+      "title": "THE INDIAN GARAGE CO",
+      "subtitle": "Floral Print Slim Fit Shirt",
+      "discounted_price": "560",
+      "strike_price": "1749",
+      "discount": "(68% OFF)",
+      "images": [
+        "https://assets.ajio.com/medias/sys_master/root/20210316/kjF9/604fbd927cdb8c1f146357d7/-473Wx593H-460698963-green-MODEL.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20210316/Bnms/604faff7f997dd5c40115445/-473Wx593H-460698963-green-MARKETING.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20210316/Bnms/604faff7f997dd5c40115445/-473Wx593H-460698963-green-MARKETING.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20210316/Bnms/604faff7f997dd5c40115445/-473Wx593H-460698963-green-MARKETING.jpg"
+         ],
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "rating": "4.9",
+      "rating_count": "8k"
+    },
+    {
+      "category": "Mens",
+      "title": "DENNISLINGO PREMIUM ATTIRE",
+      "subtitle": "Striped Slim Fit Shirt",
+      "discounted_price": "800",
+      "strike_price": "2499",
+      "discount": "(68% OFF)",
+      "images": [
+        "https://assets.ajio.com/medias/sys_master/root/20210403/AcbB/6068b6caf997dd7b64643def/dennislingo_premium_attire_green_striped_slim_fit_shirt.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20210403/iNSa/6068b6caf997dd7b64643d87/-473Wx593H-462152986-green-MODEL7.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20210403/iNSa/6068b6caf997dd7b64643d87/-473Wx593H-462152986-green-MODEL7.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20210403/iNSa/6068b6caf997dd7b64643d87/-473Wx593H-462152986-green-MODEL7.jpg"
+         ],
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "rating": "4.2",
+      "rating_count": "12k"
+    },
+    {
+      "category": "Mens",
+      "title": "GLITO",
+      "subtitle": "Track Pants with Insert Pockets",
+      "discounted_price": "377",
+      "strike_price": "1299",
+      "discount": "(71% OFF)",
+      "images": [
+        "https://assets.ajio.com/medias/sys_master/root/20220711/A0ce/62cc3810aeb26921af6f9ab5/glito_grey_track_pants_with_insert_pockets.jpg",
+"https://assets.ajio.com/medias/sys_master/root/20220711/8dfq/62cc3810aeb26921af6f9a32/-473Wx593H-464623262-grey-MODEL5.jpg",
+"https://assets.ajio.com/medias/sys_master/root/20220711/8dfq/62cc3810aeb26921af6f9a32/-473Wx593H-464623262-grey-MODEL5.jpg",
+"https://assets.ajio.com/medias/sys_master/root/20220711/8dfq/62cc3810aeb26921af6f9a32/-473Wx593H-464623262-grey-MODEL5.jpg",
+"https://assets.ajio.com/medias/sys_master/root/20220711/8dfq/62cc3810aeb26921af6f9a32/-473Wx593H-464623262-grey-MODEL5.jpg"
+         ],
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "rating": "4.7",
+      "rating_count": "2k"
+    },
+    {
+      "category": "Mens",
+      "title": "IVOC",
+      "subtitle": "Flat Front Slim Fit Cargo Pants",
+      "discounted_price": "1200",
+      "strike_price": "2399",
+      "discount": "(50% OFF)",
+      "images": [
+        "https://assets.ajio.com/medias/sys_master/root/20220818/KstB/62fde20caeb269176182b792/-473Wx593H-461394178-green-MODEL7.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20220818/KstB/62fde20caeb269176182b792/-473Wx593H-461394178-green-MODEL7.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20220818/KstB/62fde20caeb269176182b792/-473Wx593H-461394178-green-MODEL7.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20220818/KstB/62fde20caeb269176182b792/-473Wx593H-461394178-green-MODEL7.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20220818/KstB/62fde20caeb269176182b792/-473Wx593H-461394178-green-MODEL7.jpg",
+        "https://assets.ajio.com/medias/sys_master/root/20220818/KstB/62fde20caeb269176182b792/-473Wx593H-461394178-green-MODEL7.jpg"
+          ],
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "rating": "4.1",
+      "rating_count": "32k"
+    },
+    {
+      "category": "Mens",
+      "title": "AUSK",
+      "subtitle": "Crew-Neck T-shirt with Contrast Stripes",
+      "discounted_price": "360",
+      "strike_price": "999",
+      "discount": "(64% OFF)",
+      "images": [
+       "https://assets.ajio.com/medias/sys_master/root/20220121/ihND/61ea59caaeb2695cdd2444ac/ausk_blue_crew-neck_t-shirt_with_contrast_stripes.jpg",
+       "https://assets.ajio.com/medias/sys_master/root/20220121/n6zx/61ea59caaeb2695cdd244412/-473Wx593H-461085141-blue-MODEL5.jpg",
+       "https://assets.ajio.com/medias/sys_master/root/20220121/n6zx/61ea59caaeb2695cdd244412/-473Wx593H-461085141-blue-MODEL5.jpg",
+       "https://assets.ajio.com/medias/sys_master/root/20220121/n6zx/61ea59caaeb2695cdd244412/-473Wx593H-461085141-blue-MODEL5.jpg",
+       "https://assets.ajio.com/medias/sys_master/root/20220121/n6zx/61ea59caaeb2695cdd244412/-473Wx593H-461085141-blue-MODEL5.jpg"
+      ],
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "rating": "3.9",
+      "rating_count": "2k"
     }
+
   ]
-}
+} 
