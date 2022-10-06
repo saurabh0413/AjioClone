@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import styled from "styled-components";
 import "./pages.css";
@@ -6,7 +6,11 @@ import "../Components/index.css";
 import axios from "axios";
 import Singleproduct from "../Components/Singleproduct";
 import FilterBluprint from "../Components/FilterBluprint";
+import { Link, Navigate } from "react-router-dom";
+import { ProductCont } from "../Context/ProductContext";
+
 const Men = () => {
+ 
   const FilterData = [
     {
       category: "Gender",
@@ -37,20 +41,7 @@ const Men = () => {
       heading: ["18 Edition", "2Go", "3pin", "4290", "5th ANFOLD"],
     },
   ];
-
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios
-      .get("http://localhost:8080/products?category=Mens&_limit=15")
-      .then((res) => {
-        console.log(res.data, "res");
-        setData(res.data);
-      })
-      .catch((err) => {
-        console.log(err, "err");
-      });
-  }, []);
-
+  const {data} = useContext(ProductCont)
   return (
     <div>
       <div style={{ height: "90px" }}>
@@ -64,6 +55,7 @@ const Men = () => {
         </Filtermens>
         <Mensdata>
           {data.map((prod) => {
+            <Link to="/shop/women" />;
             return <Singleproduct data={prod} />;
           })}
         </Mensdata>
