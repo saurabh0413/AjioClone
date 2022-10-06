@@ -5,19 +5,51 @@ import "./pages.css";
 import "../Components/index.css";
 import axios from "axios";
 import Singleproduct from "../Components/Singleproduct";
+import FilterBluprint from "../Components/FilterBluprint";
 const Men = () => {
+  const FilterData = [
+    {
+      category: "Gender",
+      heading: ["Men"],
+    },
+    {
+      category: "Category",
+      heading: [
+        "Tshirts",
+        "Shirts",
+        "Sweatshirts & Hoodies",
+        "Track Pants",
+        "kurtas & shirts",
+      ],
+    },
+    {
+      category: "Price",
+      heading: [
+        "Below Rs. 500",
+        "Rs. 500-1000",
+        "Rs.1001-1500",
+        "Rs.1501-2000",
+        "Rs.2001-2500",
+      ],
+    },
+    {
+      category: "Brands",
+      heading: ["18 Edition", "2Go", "3pin", "4290", "5th ANFOLD"],
+    },
+  ];
+
   const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:8080/clothing?category=Mens&_limit=15")
-  //     .then((res) => {
-  //       console.log(res.data, "res");
-  //       setData(res.data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err, "err");
-  //     });
-  // }, []);
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/products?category=Mens&_limit=15")
+      .then((res) => {
+        console.log(res.data, "res");
+        setData(res.data);
+      })
+      .catch((err) => {
+        console.log(err, "err");
+      });
+  }, []);
 
   return (
     <div>
@@ -25,9 +57,12 @@ const Men = () => {
         <Navbar />
       </div>
       <div className="filter-mens-data">
-        <Filtermens></Filtermens>
+        <Filtermens>
+          {FilterData.map((item) => {
+            return <FilterBluprint data={item} />;
+          })}
+        </Filtermens>
         <Mensdata>
-         
           {data.map((prod) => {
             return <Singleproduct data={prod} />;
           })}
