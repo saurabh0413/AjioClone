@@ -1,27 +1,22 @@
-import React, { Children, createContext, useEffect, useState } from "react";
 import axios from "axios";
-export const ProductCont = createContext();
+import React, {
+  Children,
+  createContext,
+  useContext,
+  useEffect,
+  useReducer,
+  useState,
+} from "react";
+import reducer, { initialDAta } from "./reducer";
+export const ContextPro = createContext();
 
-const ProductContext = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    getData();
-  }, []);
-
-  const getData = () => {
-    axios
-      .get("http://localhost:8080/products?category=Mens&_limit=15")
-      .then((res) => {
-        console.log(res.data, "res");
-        setData(res.data);
-      })
-      .catch((err) => {
-        console.log(err, "err");
-      });
-  };
-
+const ProductContext = ({ children }) => {
+  const [state, dispatch] = useReducer(reducer, initialDAta);
+ 
   return (
-    <ProductCont.Provider value={{ data }}>{Children}</ProductCont.Provider>
+    <ContextPro.Provider value={{ state, dispatch }}>
+      {children}
+    </ContextPro.Provider>
   );
 };
 

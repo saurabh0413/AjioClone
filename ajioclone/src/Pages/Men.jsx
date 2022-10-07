@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useReducer, useState } from "react";
 import Navbar from "../Components/Navbar";
 import styled from "styled-components";
 import "./pages.css";
@@ -7,10 +7,9 @@ import axios from "axios";
 import Singleproduct from "../Components/Singleproduct";
 import FilterBluprint from "../Components/FilterBluprint";
 import { Link, Navigate } from "react-router-dom";
-import { ProductCont } from "../Context/ProductContext";
+import { ContextPro } from "../Context/ProductContext";
 
 const Men = () => {
- 
   const FilterData = [
     {
       category: "Gender",
@@ -41,7 +40,18 @@ const Men = () => {
       heading: ["18 Edition", "2Go", "3pin", "4290", "5th ANFOLD"],
     },
   ];
-  const {data} = useContext(ProductCont)
+
+  const { state, dispatch } = useContext(ContextPro);
+  console.log("state",state)
+ 
+  useEffect(() => {
+    getData();
+  }, []);
+  const getData = () => {
+    axios.get("http://localhost:8080/products?_limit=15&_page=3").then((res) => {
+      dispatch({ type: "GET_DATA", payload: res.data });
+    });
+  };
   return (
     <div>
       <div style={{ height: "90px" }}>
@@ -53,12 +63,12 @@ const Men = () => {
             return <FilterBluprint data={item} />;
           })}
         </Filtermens>
-        <Mensdata>
-          {data.map((prod) => {
+         <Mensdata>
+          {state.products.map((prod) => {
             <Link to="/shop/women" />;
             return <Singleproduct data={prod} />;
           })}
-        </Mensdata>
+        </Mensdata> 
       </div>
     </div>
   );

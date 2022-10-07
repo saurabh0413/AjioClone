@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const FilterBluprint = (props) => {
-  console.log("props", props);
   const [dis, setDis] = useState(false);
   return (
     <div>

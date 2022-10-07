@@ -6,11 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 import { ChakraProvider } from "@chakra-ui/react";
 function App() {
   return (
-    <div className="App">
-      <ChakraProvider>
-        <MainRoutes />
-      </ChakraProvider>
-    </div>
+    <ChakraProvider>
+        <div className="App">
+          <MainRoutes />
+        </div>
+    </ChakraProvider>
   );
 }
 
