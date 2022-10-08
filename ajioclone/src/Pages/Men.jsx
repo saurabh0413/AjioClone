@@ -42,13 +42,13 @@ const Men = () => {
   ];
 
   const { state, dispatch } = useContext(ContextPro);
-  console.log("state",state)
+  
  
   useEffect(() => {
     getData();
   }, []);
-  const getData = () => {
-    axios.get("http://localhost:8080/products?_limit=15&_page=3").then((res) => {
+   const getData = () => {
+    axios.get("http://localhost:8080/products").then((res) => {
       dispatch({ type: "GET_DATA", payload: res.data });
     });
   };
@@ -66,7 +66,7 @@ const Men = () => {
          <Mensdata>
           {state.products.map((prod) => {
             <Link to="/shop/women" />;
-            return <Singleproduct data={prod} />;
+            return <Singleproduct data={prod} key={prod.id}/>;
           })}
         </Mensdata> 
       </div>
